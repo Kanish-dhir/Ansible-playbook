@@ -12,3 +12,8 @@
         name: nginx
         state: started
         enabled: yes
+  - name: deploy web page
+    copy: 
+      src: index.html
+      dest: /var/www/html
+                       
